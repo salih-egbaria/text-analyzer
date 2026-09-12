@@ -1,80 +1,44 @@
-Text Analyzer Project / Salih Egbaria
+# Text Analyzer
 
-Extensions:
+A modular Python text-analysis project that processes structured text data and performs a variety of analysis tasks using text preprocessing, sequence analysis, and graph-based algorithms.
 
-Processes text by transforming it to lowercase, removing punctuation, and cleaning spaces.
+The project is organized into nine independent tasks, with a central command-line interface for selecting and running each analysis.
 
-Utilizes utility functions from utils.py, such as convert_lowercase(), remove_punctuation(),
-and remove_redundant_spaces() to ensure clean and uniform text analysis.
+## Features
 
-Offers improved readability and data consistency, making the analysis more effective.
+- Text preprocessing and normalization
+- Lowercase conversion
+- Punctuation removal
+- Redundant whitespace removal
+- Tokenization and sequence analysis
+- Co-occurrence detection using sliding windows
+- Entity relationship analysis
+- Graph traversal using Depth-First Search (DFS)
+- Cycle detection
+- CSV and JSON input validation
+- Modular task-based architecture
 
+## Project Structure
 
-Design
-
-The project structure was crafted with flexibility and efficiency in mind:
-
-Modular Architecture:
-
-Every task is split into individual modules (TASK1 to TASK9) is isolated in its own module
- (task1.py, task2.py, etc.) to promote maintainability and scalability.
-
-The main.py script serves as the central command interface, allowing users to specify tasks and input files via
- command-line arguments.
-
-This structure facilitates easy updates and debugging for individual modules without affecting the entire project.
-
-Utility Functions:
-
-Shared functions in utils.py prevent code duplication and streamline common operations like text cleaning and formatting.
-
-They ensure consistency across all modules and simplify future enhancements.
-
-This design ensures robust, efficient text analysis while embracing creative constraints for specialized operations,
-balancing theoretical exploration with practical implementation.
-
-
-Algorithms Used
-
-I used several algorithms in the working of this project:
-
-Text Preprocessing Algorithms:
-
-Lowercasing Algorithm: Converts all text to lowercase for uniformity.
-
-Punctuation Removal Algorithm: Replaces punctuation with spaces to clean the text.
-
-Whitespace Normalization: Removes redundant spaces using iterative replacements.
-
-Validation Algorithms:
-
-File Path Validation: Ensures that the provided file paths are valid CSV or JSON files.
-
-Task Number Validation: verifies if the given task number falls within a valid range.
-Sequence Handling Algorithms:
-
-Tokenization: Splits text into tokens for sequence analysis.
-
-Sliding Window Algorithm: Used for detecting co-occurrences within a given text window.
-
-Graph-Based Algorithms:
-Depth-First Search (DFS): For fixed-length path finding in entity relationships.
-Cycle Detection Algorithm: Identifies cycles within graphs to prevent infinite loops during traversal.
-
-Why I Have Chosen This Approach
-
-Graph-Based Methods:
-
-Optimizes performing analyses of text relationships to ensure that performance remains efficient for large datasets.
-Improves the capability for the detection and analysis of complex relations between entities.
-Algorithm Selection:
-
-DFS (Depth-First Search) was chosen for its effectiveness in solving path-related problems.
-
-These algorithms ensure accurate and efficient traversal for different connection scenarios.
-
-
-
-
-
-
+```text
+text-analyzer/
+├── main.py
+├── utils.py
+├── task1.py
+├── task2.py
+├── task3.py
+├── task4.py
+├── task5.py
+├── task6.py
+├── task7.py
+├── task8.py
+├── task9.py
+├── test_task1.py
+├── test_task2.py
+├── test_task3.py
+├── test_task4.py
+├── test_task5.py
+├── test_task6.py
+├── test_task7.py
+├── test_task8.py
+└── test_task9.py
