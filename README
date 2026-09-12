@@ -1,0 +1,80 @@
+Text Analyzer Project / Salih Egbaria
+
+Extensions:
+
+Processes text by transforming it to lowercase, removing punctuation, and cleaning spaces.
+
+Utilizes utility functions from utils.py, such as convert_lowercase(), remove_punctuation(),
+and remove_redundant_spaces() to ensure clean and uniform text analysis.
+
+Offers improved readability and data consistency, making the analysis more effective.
+
+
+Design
+
+The project structure was crafted with flexibility and efficiency in mind:
+
+Modular Architecture:
+
+Every task is split into individual modules (TASK1 to TASK9) is isolated in its own module
+ (task1.py, task2.py, etc.) to promote maintainability and scalability.
+
+The main.py script serves as the central command interface, allowing users to specify tasks and input files via
+ command-line arguments.
+
+This structure facilitates easy updates and debugging for individual modules without affecting the entire project.
+
+Utility Functions:
+
+Shared functions in utils.py prevent code duplication and streamline common operations like text cleaning and formatting.
+
+They ensure consistency across all modules and simplify future enhancements.
+
+This design ensures robust, efficient text analysis while embracing creative constraints for specialized operations,
+balancing theoretical exploration with practical implementation.
+
+
+Algorithms Used
+
+I used several algorithms in the working of this project:
+
+Text Preprocessing Algorithms:
+
+Lowercasing Algorithm: Converts all text to lowercase for uniformity.
+
+Punctuation Removal Algorithm: Replaces punctuation with spaces to clean the text.
+
+Whitespace Normalization: Removes redundant spaces using iterative replacements.
+
+Validation Algorithms:
+
+File Path Validation: Ensures that the provided file paths are valid CSV or JSON files.
+
+Task Number Validation: verifies if the given task number falls within a valid range.
+Sequence Handling Algorithms:
+
+Tokenization: Splits text into tokens for sequence analysis.
+
+Sliding Window Algorithm: Used for detecting co-occurrences within a given text window.
+
+Graph-Based Algorithms:
+Depth-First Search (DFS): For fixed-length path finding in entity relationships.
+Cycle Detection Algorithm: Identifies cycles within graphs to prevent infinite loops during traversal.
+
+Why I Have Chosen This Approach
+
+Graph-Based Methods:
+
+Optimizes performing analyses of text relationships to ensure that performance remains efficient for large datasets.
+Improves the capability for the detection and analysis of complex relations between entities.
+Algorithm Selection:
+
+DFS (Depth-First Search) was chosen for its effectiveness in solving path-related problems.
+
+These algorithms ensure accurate and efficient traversal for different connection scenarios.
+
+
+
+
+
+
